@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes - Note Taking App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Notes</h1>
+        </header>
+
+        <main>
+            <section class="note-input-section">
+                <div class="input-container">
+                    <textarea 
+                        id="noteInput" 
+                        placeholder="Write your note here..." 
+                        rows="4"
+                    ></textarea>
+                    <div class="input-actions">
+                        <span id="charCounter" class="char-counter">0 characters</span>
+                        <button id="addNoteBtn" class="btn btn-add">Add Note</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="search-section">
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search notes..." 
+                        class="search-input"
+                    >
+                </div>
+            </section>
+
+            <section class="notes-display-section">
+                <div id="notesContainer" class="notes-container">
+                    <!-- Notes will be dynamically inserted here -->
+                </div>
+                <div id="emptyState" class="empty-state">
+                    <p>No notes yet. Create your first note above!</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
